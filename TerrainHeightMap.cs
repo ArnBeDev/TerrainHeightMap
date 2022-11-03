@@ -14,8 +14,6 @@ public class TerrainHeightMap : MonoBehaviour
     // the needed size of the heightMap depends on your modelsize
     private float[,] heightMap = new float[3500, 3500];
 
-
-
     //each point of a triangle from the model
     private Vector3 vertex1;
     private Vector3 vertex2;
