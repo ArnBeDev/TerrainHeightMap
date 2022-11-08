@@ -14,6 +14,8 @@ public class TerrainHeightMap : MonoBehaviour
     // the needed size of the heightMap depends on your modelsize
     private float[,] heightMap = new float[3500, 3500];
 
+
+
     //each point of a triangle from the model
     private Vector3 vertex1;
     private Vector3 vertex2;
@@ -226,7 +228,7 @@ public class TerrainHeightMap : MonoBehaviour
         float a = nomA / d;
         float b = nomB / d;
         float c = 1 - a - b;
-        //(0 <=  a <= 1 && 0 <= b <= 1 a&& 0 <= c <= 1);
+      
 
         return ((0 <= a && a <= 1) && (0 <= b && b <= 1) && (0 <= c && c <= 1));
 
@@ -235,9 +237,9 @@ public class TerrainHeightMap : MonoBehaviour
     //this method calculates the height of a given 2D point in a 3D triangle
     private float GetHeight(Vector3 p1, Vector3 p2, Vector3 p3, Vector2 pos)
     {
-        float det = (p2.z - p3.z) * (p1.x - p3.x) + (p3.x - p2.x) * (p1.z - p3.z);
-        float l1 = ((p2.z - p3.z) * (pos.x - p3.x) + (p3.x - p2.x) * (pos.y - p3.z)) / det;
-        float l2 = ((p3.z - p1.z) * (pos.x - p3.x) + (p1.x - p3.x) * (pos.y - p3.z)) / det;
+        float d = (p2.z - p3.z) * (p1.x - p3.x) + (p3.x - p2.x) * (p1.z - p3.z);
+        float l1 = ((p2.z - p3.z) * (pos.x - p3.x) + (p3.x - p2.x) * (pos.y - p3.z)) / d;
+        float l2 = ((p3.z - p1.z) * (pos.x - p3.x) + (p1.x - p3.x) * (pos.y - p3.z)) / d;
         float l3 = 1.0f - l1 - l2;
         return l1 * p1.y + l2 * p2.y + l3 * p3.y;
     }
