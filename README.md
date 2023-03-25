@@ -8,13 +8,13 @@ In Blender you have to select all faces which are walkable.
 
 Make sure the faces are not in the negative areas of the X/Y-Axes. Otherwise you need to customize the algorithm.
 
-![](Aspose.Words.6751a691-20bc-4700-8424-d12bb634d88f.001.jpeg)
+![](docs/001.jpeg)
 
 Step 2:
 
 -After you select the faces press „Shift+D“ to duplicate the faces -Now press „P“ and choose „Seperate by Selection“
 
-![](Aspose.Words.6751a691-20bc-4700-8424-d12bb634d88f.002.png)
+![](docs/002.png)
 
 Step 3:
 
@@ -32,7 +32,7 @@ Step 3:
 
 ` `-Now press export.
 
-![](Aspose.Words.6751a691-20bc-4700-8424-d12bb634d88f.003.jpeg)
+![](docs/003.jpeg)
 
 Step 4: 
 
@@ -44,25 +44,25 @@ Step 4:
 
 -Note: you can modify the code so that you don’t need a .txt file, but it could be easier to find txt       files under a lot of obj files
 
-![](Aspose.Words.6751a691-20bc-4700-8424-d12bb634d88f.004.jpeg)
+![](docs/004.jpeg)
 
 Step 5:
 
 Add the TerrainHeightMap class to one of the Gameobjects in your scene.
 
-![](Aspose.Words.6751a691-20bc-4700-8424-d12bb634d88f.005.jpeg)
+![](docs/005.jpeg)
 
 Step 6:
 
 Add the Terrain.txt file to the TerrainHeightMap Component.
 
-![](Aspose.Words.6751a691-20bc-4700-8424-d12bb634d88f.006.jpeg)
+![](docs/006.jpeg)
 
 Step 7:
 
 -Now you can access the heightmap to get the height of a given position. -Check PlayerExample class for an example.
 
-![](Aspose.Words.6751a691-20bc-4700-8424-d12bb634d88f.007.jpeg)
+![](docs/007.jpeg)
 
 
 NOTE: Somehow Unity turns the sign of the X-coordinate of a OBJ model.
