@@ -1,4 +1,6 @@
-﻿This unity class allows you to create a heightmap (2d Array that contains height of specific coordinate) from an .obj model.
+# TerrainHeightMap
+
+This unity class allows you to create a heightmap (2d Array that contains height of specific coordinate) from an .obj model.
 
 Step 0:
 
