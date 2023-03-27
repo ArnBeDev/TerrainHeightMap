@@ -64,7 +64,8 @@ This unity class allows you to create a heightmap (2d Array that contains height
 
 #### Step 7:
 
- - Now you can access the heightmap to get the height of a given position. -Check PlayerExample class for an example.
+ - Now you can access the heightmap to get the height of a given position.
+ - Check PlayerExample class for an example.
 
 ![](docs/007.jpeg)
 
